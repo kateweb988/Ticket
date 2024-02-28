@@ -1,0 +1,100 @@
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder 
+   color: rgb(255, 255, 255) !important
+input::-moz-placeholder, textarea::-moz-placeholder
+   color: rgb(255, 255, 255) !important
+input:-ms-input-placeholder, textarea:-ms-input-placeholder  
+   color: rgb(255, 255, 255) !important
+input:-moz-placeholder, textarea:-moz-placeholder 
+   color: rgb(255, 255, 255) !important
+.menu-btn, .menu
+   display: none
+.popup__bg, .popup__bg2
+   position: fixed
+   top: 0
+   left: 0
+   width: 100%
+   height: 100vh
+   background: rgba(0, 0, 0, 0.7)
+   opacity: 0
+   pointer-events: none
+   transition: 0.5s all
+   overflow-y: auto
+   overflow-x: hidden
+.popup__bg.active, .popup__bg2.active
+    opacity: 1
+    pointer-events: all
+    transition: 0.5s all
+    z-index: 22
+.popup, .popup2
+   position: absolute
+   top: 49%
+   left: 50%
+   transform: translate(-50%, -50%) scale(0)
+   width: 1270px
+   height: max-content
+   transition: 0.5s all
+   text-align: center
+   background: white
+   padding: 59px 44px 47px
+.popup.active, .popup2.active
+   transform: translate(-50%, -46%) scale(1)
+   transition: 0.5s all
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
+   display: none
+.custom-checkbox 
+   position: absolute
+   z-index: -1
+   opacity: 0
+.custom-checkbox+label, .custom-checkbox+label+label
+   display: flex
+   align-items: flex-start
+   user-select: none
+   cursor: pointer
+   font-size: 24px
+   line-height: 33px
+   color: #FFFFFF
+.custom-checkbox+label::before, .custom-checkbox+label+label::before
+   content: ''
+   display: inline-block
+   flex-shrink: 0
+   display: flex
+   flex-grow: 0
+   background-repeat: no-repeat
+   background-position: center center
+   background: $blue
+   margin-right: 20px
+   flex: 1 0 auto
+   width: 30px
+   height: 30px
+   border: 1px solid white
+   transition: 0.2s
+   max-width: 30px
+   max-height: 30px
+   border-radius: 50%
+.custom-checkbox+label#check-error::before
+   display: none
+.custom-checkbox:checked+label::before, .custom-checkbox:checked+label+label::before  
+   background: url(/img/check.svg) no-repeat center center
+   background-color: $blue
+.swiper-pagination
+   display: flex
+   justify-content: center
+   bottom: 19px
+   position: absolute
+   z-index: 2
+.swiper-pagination-bullet
+   width: 52px
+   height: 2px
+   background-color: #ffffff
+   opacity: 0.2
+.swiper-pagination-bullet-active
+   background-color: $blue !important
+   opacity: 1
+.mob 
+   display: none
+.input-holder.error
+   border-color:#f20
+   input 
+      border: 1px solid #f20 !important
+   .err-txt
+      display: block

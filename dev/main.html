@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>ITAero</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
+		rel="stylesheet">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap">
+
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					// Центр карты, указываем коордианты
+					center: [47.248779, 39.711860],
+					// Масштаб, тут все просто
+					zoom: 14,
+					// Отключаем все элементы управления
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Наша метка, указываем коордианты
+				myGeoObjects = new ymaps.Placemark([47.248779, 39.711860], {
+					balloonContentBody: 'ЧистоGUN',
+				}, {
+					iconLayout: 'default#image',
+					// Путь до нашей картинки
+					iconImageHref: 'img/map.svg',
+					// Размер по ширине и высоте
+					iconImageSize: [50, 70],
+					// Смещение левого верхнего угла иконки относительно
+					// её «ножки» (точки привязки).
+					iconImageOffset: [-35, -35]
+				});
+
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				// Отлючаем возможность изменения масштаба
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="js/all.js"></script>
+</body>
+
+</html>
