@@ -1,31 +1,704 @@
-// @media screen and (max-width: 1300px)
-// @media screen and (max-width: 1199px)
-// @media ( max-width: 991px )
-//    input, textarea, select
-//       -webkit-appearance: none
-//       -moz-appearance: none
-//       appearance: none
-// @media screen and (max-width: 767px)
-// @media screen and (max-width: 576px)
-//    button:active, button:focus 
-//       outline: none
-//    button::-moz-focus-inner 
-//       border: 0
-//    a:active, a:focus
-//       outline: none
-//    input, textarea
-//       outline: none
-//    input:active, textarea:active
-//       outline: none
-//    input:focusout
-//       outline: none
-//    .mob 
-//       display: block
-//    .mm 
-//       flex-direction: column 
-//       align-items: center
-//       justify-content: center
-//       li 
-//          margin-bottom: 40px !important
-//          width: 100% !important
-//          margin-top: 0 !important
+@media screen and (max-width: 1300px)
+   .poster__item
+      width: 31.9%
+   .item__left
+      max-width: 72%
+@media screen and (max-width: 1199px)
+   .poster__area:after
+      display: none
+   .header__box
+      flex-direction: column 
+      align-items: center
+      margin-top: 40px
+      position: relative
+   .header__content
+      max-width: 100% 
+      margin-bottom: 40px
+      p 
+         margin-bottom: 0
+   .header__content h1:after
+      right: 127px
+   .header__btn
+      margin: 0 auto
+      position: absolute
+      bottom: -110px
+      left: 50%
+      margin-left: -144px
+   .header__row
+      margin-top: 150px
+   .footer__policy
+      margin-right: 50px
+   .poster h1
+      font-size: 32px
+   .poster__search
+      max-width: 52.2%
+   .poster__item 
+      width: 48.7%
+      margin: 0 24px 24px  0
+      &:nth-child(3n)
+         margin-right: 24px
+      &:nth-child(2n)
+         margin-right: 0
+   .poster .swiper1:after, .poster__arrow
+      display: none
+   .poster .swiper1
+      overflow: visible
+   .item__wrap
+      // flex-direction: column-reverse
+      align-items: center
+      position: relative
+   .item__images
+      justify-content: space-between
+   .item__area
+      max-width: 62%
+   .item__right
+      margin: 0 0 30px
+      position: absolute
+      top: 0
+      right: 0
+   .item__left
+      max-width: 100%
+   .item__row
+      margin-bottom: 30px
+      max-width: 65%
+      flex-wrap: wrap
+   .item__block
+      margin-bottom: 10px
+   .tickets__item
+      width: 31.53%
+      &:nth-child(4n)
+         margin-right: 24px
+      &:nth-child(3n)
+         margin-right: 0
+   .chat__info
+      max-width: 327px
+   .popup_order
+      width: 90%
+   .poster .swiper1 .swiper-slide:nth-child(7) 
+      margin-left: 48px !important
+@media ( max-width: 991px )
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .nav__local, .nav__enter, .nav__btn
+      width: 40px
+      height: 40px
+      align-items: center
+      justify-content: center
+      border: 1px solid rgb(233, 235, 240)
+      border-radius: 4px
+      background: rgb(255, 255, 255)
+      margin-left: 8px
+      p
+         display: none
+   .nav__btn
+      background: $blue 
+      border: 1px solid $blue
+      img 
+         margin-right: 0
+   .header__content h1:after
+      right: 210px
+   .header__row
+      flex-wrap: wrap 
+   .header__item 
+      width: 48.8%
+      margin-bottom: 16px
+   .footer__box
+      flex-direction: column 
+      align-items: center
+      text-align: center
+   .footer__rights
+      margin: 0 0 16px
+   .footer__policy
+      margin: 0 0 18px
+   .footer__com
+      margin: 16px auto 0
+   .poster__head
+      flex-direction: column
+      align-items: flex-start
+   .poster h1
+      margin-right: 0
+      margin-bottom: 20px
+   .poster__search
+      max-width: 100%
+   .poster__item 
+      width: 48.2%
+      margin: 0 24px 24px  0
+      &:nth-child(3n)
+         margin-right: 24px
+      &:nth-child(2n)
+         margin-right: 0
+   .poster__item h2
+      font-size: 14px
+   .poster__content 
+      padding: 12px 16px 13px
+   .poster__new
+      font-size: 14px
+   .poster__old
+      font-size: 10px
+   .poster__data, .poster__local 
+      font-size: 12px
+   .poster__content div:first-child
+      max-width: 180px
+   .item__box
+      padding: 28px 20px
+      height: 300px
+   .item__box h1
+      font-size: 30px
+   .item__box p
+      font-size: 14px
+   .item__bottom
+      flex-wrap: wrap
+      p 
+         margin-bottom: 10px
+   .item__images
+      overflow-x: auto
+      justify-content: flex-start
+   // .item__right
+   //    position: relative
+   .item__area
+      max-width: 100%
+   .item__row 
+      margin-bottom: 130px
+      max-width: 55%
+      flex-wrap: wrap
+   .item__block
+      margin-right: 0
+      width: 100%
+   .item__images a
+      display: flex
+      flex: 1 0 auto 
+      max-width: 288px
+   .tickets__item
+      width: 48.2%
+      &:nth-child(2n)
+         margin-right: 0px
+      &:nth-child(3n)
+         margin-right: 24px
+   .nav_in
+      margin-bottom: 0
+   .nav_in .nav__enter_block
+      display: none
+   .nav_in .nav__enter > img
+      display: block
+   .tickets
+      padding-bottom: 60px
+   .nav_in .nav__enter
+      order: 2
+   .nav_in .nav__enter
+      margin-left: 8px
+   .chat
+      margin-top: 0
+   .chat__box
+      flex-direction: column
+   .chat__info 
+      max-width: 100%
+      border: none
+      box-shadow: 0px 10px 20px -4px rgba(0, 0, 0, 0.08)
+   .nav_in .nav__enter_block
+      display: block
+      padding: 0
+      position: absolute
+      bottom: inherit
+      left: inherit
+      right: -52px
+      width: 200px
+      top: 49px
+      width: 200px
+      padding: 20px
+      height: auto
+      transition: 0.5s
+      opacity: 0
+      z-index: 5
+      pointer-events: none
+      p 
+        display: block !important 
+   .nav_in .nav__enter
+      position: relative
+      &:hover 
+         .nav__enter_block
+            box-shadow: 0px 10px 20px -4px rgba(0, 0, 0, 0.08)
+            background: rgb(255, 255, 255)
+            opacity: 1 
+            pointer-events: inherit
+   .nav__enter_block ul
+      opacity: 1 !important
+      pointer-events: inherit !important
+   .nav_in .nav__enter_block-content
+      flex-direction: column
+      align-items: center
+   .nav_in .nav__enter_block-info
+      margin-left: 0
+   .nav_in .nav__enter_block-name
+      font-size: 13px
+      margin: 5px 0
+      line-height: 125%
+   .nav_in .nav__enter_block ul li a
+      font-size: 13px
+   .order__wrap
+      flex-direction: column
+   .order__right
+      max-width: 100%
+      border-radius: 0 0 16px 16px 
+   .order__left
+      max-height: 400px
+      border-radius: 16px 16px 0 0
+   .order__tickets
+      padding: 0 24px 24px
+   .popup3.popup_order, .popup4.popup_order
+      top: 31rem
+   .poster__row
+      flex-wrap: wrap
+   .poster__tags
+      margin: 10px 0 0 0
+   .poster .swiper1 .swiper-slide
+      justify-content: flex-start
+      width: max-content
+      &:last-child
+         display: none !important
+   .swiper-wrapper
+      justify-content: flex-start
+   .poster .swiper1 .swiper-slide a:last-child 
+      margin-right: 0px !important
+@media screen and (max-width: 767px)
+   h1 
+      font-size: 40px
+   .header__content h1:after 
+      right: 109px
+      background-size: contain
+      width: 139px
+      bottom: 1px
+   .poster__item
+      width: 100% 
+      margin-right: 0 !important
+      img 
+         object-position: center top
+   .item__block
+      max-width: 288px
+      margin: 0 auto 10px !important
+   .tickets__item
+      width: 100% 
+      margin-right: 0 !important
+   .tickets__item:after
+      top: 360px
+   .tickets__main
+      margin-bottom: 23px
+   .popup, .popup2, .popup7, .popup6
+      width: 100%
+      padding: 30px 20px
+      top: 23rem
+   .popup7
+      top: 15rem
+   .popup6
+      top: 7rem
+   .popup__item
+      width: 100%
+   .popup__bg, .popup__bg2, .popup__bg7, .popup__bg6
+      background: white
+   .popup h2, .popup2 h2, .popup7 h2, .popup6 h2
+      font-size: 20px
+   .popup__sub
+      font-size: 14px
+   .popup__form input
+      font-size: 14px
+   .popup__form label
+      font-size: 12px
+   .popup__acc
+      font-size: 14px
+      margin-top: 20px
+   .popup__form button
+      width: 100%
+      font-size: 13px
+   .order.active
+      background: rgba(0, 0, 0, 0.5)
+   .popup_order
+      width: 90%
+      top: 25rem
+   .item__right
+      position: relative
+   .item__wrap
+      flex-direction: column-reverse
+   .item__row 
+      margin-bottom: 20px
+      max-width: 100%
+@media screen and (max-width: 576px)
+   button:active, button:focus 
+      outline: none
+   button::-moz-focus-inner 
+      border: 0
+   a:active, a:focus
+      outline: none
+   input, textarea
+      outline: none
+   input:active, textarea:active
+      outline: none
+   input:focusout
+      outline: none
+   .mob 
+      display: block
+   .mm 
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      li 
+         margin-bottom: 40px !important
+         width: 100% !important
+         margin-top: 0 !important
+   .nav__logo
+      font-size: 22px
+   .container
+      padding: 0 20px
+   .nav 
+      padding: 16px 0
+   .header__content h1
+      font-size: 28px
+      margin-bottom: 11px
+      max-width: 320px
+   .header__box
+      margin-top: 30px
+      img 
+         width: 100%
+   .header__content h1:after 
+      right: 40px
+      background-size: contain
+      width: 92px
+      bottom: -7px
+   .header__content p
+      font-size: 14px
+      line-height: 153%
+   .header__content
+      margin-bottom: 18px
+   .header__btn 
+      bottom: -90px
+      margin-left: 0px
+      left: 0
+      width: 100%
+      &:before 
+         left: -12px
+      &:after 
+         right: -12px
+   .header__item
+      width: 100%
+      margin-bottom: 11px
+   .header__row
+      margin-top: 119px
+   .header
+      padding-bottom: 38px
+   .footer__policy
+      margin-bottom: 14px
+   .poster h1
+      font-size: 28px
+      width: 100%
+      margin-bottom: 14px
+      max-width: 202px
+   .poster 
+      padding: 29px 0 60px
+   .poster__month
+      font-size: 14px
+   .poster__head
+      margin-bottom: 13px
+   .poster .swiper1
+      padding-right: 0
+      max-width: 320px
+   .poster .swiper1 .swiper-slide
+      height: 60px
+   .poster__block span
+      font-size: 18px
+   .poster__block p
+      font-size: 12px
+   .poster .swiper1 .swiper-slide a:after
+      background-size: 100% !important
+   .poster__tags a
+      font-size: 13px
+      margin-right: 18px
+   .poster__area
+      margin-bottom: 22px
+   .poster__row
+      margin-bottom: 19.5px
+   .poster__item img
+      height: 200px
+   .poster__content 
+      padding: 4px 16px 13px
+   .poster__btn
+      font-size: 14px
+   .bread
+      flex-wrap: wrap
+      a
+         font-size: 12px
+   .item__box h1
+      font-size: 28px
+      margin-bottom: 10px
+   .item
+      padding: 0px 0 40px
+      .container
+         padding: 0
+      h2 
+         font-size: 24px
+   .item__box
+      height: 319px
+   .item__el p
+      font-size: 14px
+   .item__el:last-child .item__pay p
+      font-size: 18px
+   .item__flex span
+      font-size: 10px
+   .item__flex div
+      font-size: 9px
+   .item__btn
+      max-width: 288px
+      margin: 16px auto 0
+      font-size: 13px
+   .item__left
+      padding-left: 20px
+   .item__block
+      margin-right: 16px
+      height: 66px
+      padding: 12px 15px
+      position: relative
+      left: -10px
+      p 
+         font-size: 14px
+   .item__area p
+      font-size: 14px
+      max-height: 148px
+   .item__area span
+      font-size: 14px
+   .item__images 
+      margin: 32px 0 27px
+      &:after 
+         content: ""
+         display: flex
+         width: 20px
+         flex: 1 0 auto 
+         max-width: 20px
+         height: 20px
+         background: transparent
+      a 
+         margin-right: 18px
+   .item__right
+      max-width: 100%   
+      padding: 0 20px
+   .item__btn:after 
+      right: -8px
+   .item__btn:before
+      left: -8px
+   .item__info
+      max-width: 288px
+      margin: 0 auto
+   .item__area p
+      padding-right: 20px
+   .item__bottom
+      align-items: flex-start
+      padding-right: 20px
+   .item #map
+      width: 95.5%
+   .tickets
+      padding: 40px 0
+   .tickets h1
+      font-size: 28px
+   .tickets__box
+      margin-top: 30px
+   .tickets__item img
+      height: 200px
+   .tickets__content p
+      font-size: 12px
+   .tickets__item h2
+      font-size: 14px
+   .tickets__item a
+      font-size: 14px
+   .tickets__main
+      margin-bottom: 17px
+   .tickets__item:after
+      top: 368px
+   .tickets__item
+      max-width: 320px 
+      margin: 0 auto 24px !important
+   .nav_in .nav__enter_block
+      display: block
+      padding: 0
+      position: absolute
+      bottom: inherit
+      left: inherit
+      right: -52px
+      width: 200px
+      top: 49px
+      width: 200px
+      padding: 20px
+      height: auto
+      transition: 0.5s
+      opacity: 0
+      z-index: 5
+      pointer-events: none
+      p 
+        display: block !important 
+   .nav_in .nav__enter
+      position: relative
+      &:hover 
+         .nav__enter_block
+            box-shadow: 0px 10px 20px -4px rgba(0, 0, 0, 0.08)
+            background: rgb(255, 255, 255)
+            opacity: 1 
+            pointer-events: inherit
+   .nav__enter_block ul
+      opacity: 1 !important
+      pointer-events: inherit !important
+   .nav_in .nav__enter_block-content
+      flex-direction: column
+      align-items: center
+   .nav_in .nav__enter_block-info
+      margin-left: 0
+   .nav_in .nav__enter_block-name
+      font-size: 13px
+      margin: 5px 0
+      line-height: 125%
+   .nav_in .nav__enter_block ul li a
+      font-size: 13px
+   .chat__info
+      padding: 16px 24px
+   .chat__info h1
+      font-size: 20px
+   .chat__info p
+      font-size: 14px
+   .chat__content 
+      padding: 12px 16px 0px
+      margin-right: 0
+      margin-bottom: 30px
+      max-height: 500px
+   .chat__data p
+      font-size: 12px
+   .chat__text p
+      font-size: 14px
+   .chat__bottom
+      span, p 
+         font-size: 12px
+   .chat__block 
+      width: 93.72%
+   .close
+      width: 30px
+      right: -10px
+      height: 30px
+   .popup3.popup_order, .popup4.popup_order
+      .order__left
+         padding: 24px
+         h2 
+            font-size: 21px
+            margin-bottom: 15px
+      .custom-checkbox + label
+         font-size: 14px
+      .custom-checkbox + label::before 
+         width: 22px
+         height: 22px
+         max-width: 22px
+         margin-right: 8px
+      .custom-checkbox + label
+         margin-right: 20px
+         line-height: 130%
+   .order h2
+      font-size: 21px
+   .order__checkboxes
+      margin-bottom: 20px
+      div 
+         &:nth-child(2)
+            .custom-checkbox + label 
+               margin-right: 0
+   .order__form
+      input
+         font-size: 14px
+         height: 45px
+         width: 100%
+         margin-bottom: 10px
+      textarea
+         font-size: 14px
+         min-height: 120px
+   .order__enter 
+      margin-top: 10px
+      font-size: 14px
+   .order__item
+      height: 70px
+   .order__btn
+      font-size: 15px
+      height: 50px
+   .popup_thanks
+      width: 95%
+      top: 23rem
+      padding: 32px 20px
+      .close
+         right: -7px
+   .popup_thanks__item
+      max-width: 320px 
+      overflow: hidden
+      border-radius: 8px
+      margin: 0 auto 20px
+   .popup_thanks__info p
+      font-size: 13px
+   .popup_thanks__btn 
+      height: 50px
+      font-size: 15px
+   .poster__el p
+      font-size: 13px
+      margin-right: 4px
+   .sel-btn-select
+      font-size: 13px
+   .sel-btn-select
+      width: 84px
+   .sel-select-item
+      font-size: 13px
+      padding: 3px 10px
+   .sel-show input
+      font-size: 13px
+      padding-left: 40px
+   .box 
+      margin-right: 0
+   .sel-show
+      left: -80px
+      width: 182px
+   .sel-show:before
+      left: 11px
+   #some3 
+      .sel-show
+         left: -84px
+   .sel-caret-down
+      background-size: 100%
+      width: 11px
+      right: -3px
+   .poster__el
+      margin-right: 13px
+      &:last-child
+         margin-right: 0
+   .bb 
+      flex-direction: column 
+      a 
+         margin: 20px auto  !important
+   .poster .swiper1 .swiper-slide a 
+      width: 48px
+      height: 64px
+      max-width: 48px
+   .poster .swiper1 .swiper-slide a
+      margin-right: 6px
+   .poster .swiper1 .swiper-slide:nth-child(7) 
+      margin-left: 100px !important
+@media screen and (max-width: 359px)
+   .nav__local, .nav__enter, .nav__btn
+      width: 35px
+      height: 35px
+   .header__content h1
+      font-size: 27px
+      max-width: 280px
+   .header__content h1:after
+      right: 11px
+   .popup_thanks__item 
+      margin: 0 auto 20px
+      background-size: 100%
+   .popup_thanks__right h3
+      font-size: 13px
+   .poster__filters
+      flex-direction: column 
+      align-items: flex-start
+   .poster__el
+      margin-right: 0
+      margin-bottom: 10px
+   .poster__area
+      margin-bottom: 15px
+   #some3 .sel-show
+      left: -46px

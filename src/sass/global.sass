@@ -1,5 +1,5 @@
 body
-   font-family: "Unbounded", sans-serif
+   font-family: 'Unbounded'
    background: rgb(247, 248, 250)
    font-size: 15px
    font-weight: 400
@@ -13,7 +13,7 @@ a
       color: $blue
 .container
    padding: 0 15px
-   max-width: 1187px
+   max-width: 1254px
    margin: 0 auto
    @media ( max-width: 1199px )
       max-width: 960px !important
@@ -73,10 +73,12 @@ input
       pointer-events: none
       opacity: 0.5
    &:focus 
-      border: 1px solid rgb(5, 11, 46) !important
+      border: 1px solid $blue !important
       transition: 0.5s
    &:focus-visible
       outline: initial
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration
+   display: none
 path
    transition: fill 0.5s, stroke 0.5s
 div 
@@ -86,18 +88,45 @@ div
 html * 
    scrollbar-width: thin
    scrollbar-color: blue $blue
-*::-webkit-scrollbar,
-html *::-webkit-scrollbar 
+*::-webkit-scrollbar
    height: 4px
    width: 4px
 *::-webkit-scrollbar-track,
 html *::-webkit-scrollbar-track 
    background: #E7E7E7
-   border-radius: 3px
+   border-radius: 0px
 *::-webkit-scrollbar-thumb,
 html *::-webkit-scrollbar-thumb 
    background-color: $blue
+   border-radius: 0px
+.item__images, .item__row
+   scrollbar-width: thin
+   scrollbar-color: transparent transparent
+.item__images::-webkit-scrollbar, .item__row::-webkit-scrollbar
+   height: 4px
+   width: 4px
+.item__images::-webkit-scrollbar-track, .item__row::-webkit-scrollbar-track
+   background: rgb(233, 235, 240)
+   border-radius: 3px
+.item__images::-webkit-scrollbar-thumb, .item__row::-webkit-scrollbar-thumb
+   background-color: rgb(233, 235, 240)
    border-radius: 6px
+.chat__content 
+   scrollbar-width: thin
+   scrollbar-color: $blue rgb(233, 235, 240)
+.chat__content::-webkit-scrollbar, .sel-show::-webkit-scrollbar 
+   height: 10px
+   width: 2px
+   background:rgb(233, 235, 240)
+.chat__content::-webkit-scrollbar-track 
+   background:rgb(233, 235, 240)
+   border-radius: 6px
+   height: 10px
+   width: 2px
+.chat__content::-webkit-scrollbar-thumb, .sel-show::-webkit-scrollbar-thumb 
+   background-color: $blue
+   border-radius: 6px
+   width: 2px
 .btn 
    background: $blue
    display: flex
@@ -111,15 +140,16 @@ html *::-webkit-scrollbar-thumb
    color: rgb(255, 255, 255)
    font-size: 14px
    font-weight: 500
-   font-family: "Montserrat", sans-serif
+   font-family: 'Montserrat'
    line-height: 150%
    &:hover 
-      background: white
-      color: $blue
+      background: rgb(137, 82, 248)
+      color: white
+      border: 1px solid rgb(137, 82, 248)
    &_2 
       border-radius: 4px
       color: rgb(255, 255, 255)
-      font-family: Unbounded
+      font-family: 'Unbounded'
       font-weight: 400
       &:hover 
          background: rgb(137, 82, 248)

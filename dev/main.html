@@ -9,10 +9,10 @@
 	<meta name="format-detection" content="date=no">
 	<meta name="format-detection" content="address=no">
 	<meta name="format-detection" content="email=no">
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-	<title>ITAero</title>
+	<title>TicketDev</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
@@ -20,13 +20,9 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="">
 	<meta property="og:description" content="">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap"
-		rel="stylesheet">
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link rel="preload" href="css/main.css" as="style" />
+
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -34,49 +30,200 @@
 
 <body>
 	<div class="body-wrap">
+		<nav class="nav" id="nav">
+			<div class="container">
+				<div class="nav__box q">
+					<a href="/" class="nav__logo">
+						<span class="blue">Ticket</span> Dev
+					</a>
+					<div class="nav__content q">
+						<a href="#" class="nav__local q">
+							<img src="img/nav1.svg" alt="">
+							<p>
+								Выбрать город
+							</p>
+						</a>
+						<a href="#" class="nav__enter nav__enter_reg q">
+							<img src="img/nav2.svg" alt="">
+							<p>
+								Вход / Регистрация
+							</p>
+						</a>
+						<a href="#" class="nav__btn btn">
+							<img src="img/nav3.svg" alt="">
+							<p>
+								Связаться с нами
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__box q">
+					<div class="header__content">
+						<h1>
+							У нас вы сможете купить билеты со скидкой в <span> 50%</span>
+						</h1>
+						<p>
+							Мы вынуждены отталкиваться от того, что консультация с широким активом влечет за собой процесс
+							внедрения и модернизации новых принципов формирования материально-технической и кадровой базы.
+						</p>
+						<a href="#" class="btn btn_2 header__btn">
+							Купить билеты
+						</a>
+					</div>
+					<img data-src="img/main.png" srcset="img/main-big.png 2x" alt="" class="header__pic lazy">
+				</div>
+				<div class="header__row q">
+					<div class="header__item">
+						<img src="img/a1.svg" alt="">
+						<p>
+							Официальные билеты от организатора
+						</p>
+					</div>
+					<div class="header__item">
+						<img src="img/a2.svg" alt="">
+						<p>
+							Накопительная система бонусов и скидок
+						</p>
+					</div>
+					<div class="header__item">
+						<img src="img/a1.svg" alt="">
+						<p>
+							Официальные билеты от организатора
+						</p>
+					</div>
+					<div class="header__item">
+						<img src="img/a2.svg" alt="">
+						<p>
+							Накопительная система бонусов и скидок
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box q">
+					<p class="footer__rights">
+						© 2024 Ticket Dev. Все права защищены
+					</p>
+					<a href="#" class="footer__policy" target="_blank">
+						Политика конфиденциальности
+					</a>
+					<a href="#" class="footer__telegram q" target="_blank">
+						<svg class="icon">
+							<use xlink:href="img/svg-sprite.svg#telegram"></use>
+						</svg>
+						<p>
+							Наш телеграм
+						</p>
+					</a>
+					<a href="https://rusodot.ru/" class="footer__com q" target="_blank">
+						Сделано в <img src="img/com.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__bg" id="popup">
+			<div class="popup">
+				<svg class="icon close-popup">
+					<use xlink:href="img/svg-sprite.svg#close"></use>
+				</svg>
+				<div class="popup__wrap">
+					<h2>
+						Регистрация
+					</h2>
+					<p class="popup__sub">
+						Зарегистрируйся и получай индивидуальные скидки.
+					</p>
+					<form action="#" class="popup__form formWithValidation">
+						<div class="popup__flex q">
+							<div class="popup__item">
+								<label>
+									Введите ваше имя <span>*</span>
+								</label>
+								<input type="text" placeholder="Иван" class="form-control from field">
+							</div>
+							<div class="popup__item">
+								<label>
+									Введите вашу фамилию <span>*</span>
+								</label>
+								<input type="text" placeholder="Иванов" class="form-control from field">
+							</div>
+							<div class="popup__item">
+								<label>
+									Введите ваш телефон<span>*</span>
+								</label>
+								<input type="tel" placeholder="+7 (___) ___-__-__" class="form-control  from field tel">
+							</div>
+							<div class="popup__item">
+								<label>
+									Введите ваш e-mail <span>*</span>
+								</label>
+								<input type="email" placeholder="example@gmail.com" class="form-control  from field">
+							</div>
+							<div class="popup__item">
+								<label>
+									Введите ваш пароль <span>*</span>
+								</label>
+								<input type="password" placeholder="*********************" class="form-control  from field ">
+							</div>
+							<div class="popup__item">
+								<label>
+									Повторите ваш пароль <span>*</span>
+								</label>
+								<input type="password" placeholder="*********************" class="form-control  from field">
+							</div>
+						</div>
+						<button class="btn btn_2 btn-submit validateBtn">
+							Зарегистрироваться
+						</button>
 
-		<script type="text/javascript">
-			ymaps.ready(init);
-
-			function init() {
-				var myMap = new ymaps.Map("map", {
-					// Центр карты, указываем коордианты
-					center: [47.248779, 39.711860],
-					// Масштаб, тут все просто
-					zoom: 14,
-					// Отключаем все элементы управления
-					controls: []
-				});
-
-				var myGeoObjects = [];
-
-				// Наша метка, указываем коордианты
-				myGeoObjects = new ymaps.Placemark([47.248779, 39.711860], {
-					balloonContentBody: 'ЧистоGUN',
-				}, {
-					iconLayout: 'default#image',
-					// Путь до нашей картинки
-					iconImageHref: 'img/map.svg',
-					// Размер по ширине и высоте
-					iconImageSize: [50, 70],
-					// Смещение левого верхнего угла иконки относительно
-					// её «ножки» (точки привязки).
-					iconImageOffset: [-35, -35]
-				});
-
-				var clusterer = new ymaps.Clusterer({
-					clusterDisableClickZoom: false,
-					clusterOpenBalloonOnClick: false,
-				});
-
-				clusterer.add(myGeoObjects);
-				myMap.geoObjects.add(clusterer);
-				// Отлючаем возможность изменения масштаба
-				myMap.behaviors.disable('scrollZoom');
-
-			}
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+						<p class="popup__acc">
+							Уже есть аккаунт? <a href="#">Войти</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup__bg7" id="popup7">
+			<div class="popup7">
+				<svg class="icon close-popup7">
+					<use xlink:href="img/svg-sprite.svg#close"></use>
+				</svg>
+				<div class="popup__wrap">
+					<h2>
+						Войти
+					</h2>
+					<p class="popup__sub">
+						Войти в личный кабинет.
+					</p>
+					<form action="#" class="popup__form formWithValidation2" id="form7">
+						<div class="popup__item">
+							<label>
+								Введите ваш телефон<span>*</span>
+							</label>
+							<input type="tel" placeholder="+7 (___) ___-__-__" class="form-control from field tel">
+						</div>
+						<div class="popup__item">
+							<label>
+								Введите ваш пароль <span>*</span>
+							</label>
+							<input type="password" placeholder="*********************" class="form-control from field">
+						</div>
+						<button class="btn btn_2 validateBtn2">
+							Войти
+						</button>
+						<p class="popup__acc">
+							Нет аккаунта? <a href="#">Зарегистрироваться</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script src="js/all.js"></script>
 </body>
 

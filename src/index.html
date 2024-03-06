@@ -41,38 +41,470 @@
 				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Главная</a>
 		</li>
 		<li style="width: 25%; margin: 0 auto 40px;">
-			<a href="service1.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуга1</a>
+			<a href="poster.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Афиша</a>
 		</li>
 		<li style="width: 25%; margin: 0 auto 40px;">
-			<a href="service2.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуга2</a>
+			<a href="item.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Концерт</a>
 		</li>
 		<li style="width: 25%; margin: 0 auto 40px;">
-			<a href="service3.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуга3</a>
+			<a href="tickets.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Билеты</a>
 		</li>
 		<li style="width: 25%; margin: 0 auto 40px;">
-			<a href="service4.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Услуга4</a>
-		</li>
-		<li style="width: 25%; margin: 0 auto;">
-			<a href="portfolio.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Портфолио</a>
-		</li>
-		<li style="width: 25%; margin: 0 auto;">
-			<a href="portfolio-item.html"
-				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Работа</a>
+			<a href="chat.html"
+				style="font-weight: bold; color: black; font-size: 25px; display: block; text-align: center;">Чат</a>
 		</li>
 	</ul>
+	<div class="d-flex  bb" style="justify-content: center;">
+		<a href=" #" class="btn btn_2 a6" style="margin: 20px;">
+			Регистрация
+		</a>
+		<a href="#" class="btn btn_2 a7" style="margin: 20px;">
+			Войти
+		</a>
+	</div>
 	<div class="d-flex"
 		style="justify-content: center; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
-		<a href="#" class="btn btn_1" style="margin: 20px;">
-			Купить билеты
+		<a href="#" class="btn btn_1 a1" style="margin: 20px;">
+			popup1
 		</a>
-		<a href="#" class="btn btn_2" style="margin: 20px;">
-			Купить билеты
+		<a href="#" class="btn btn_1 a2" style="margin: 20px;">
+			popup2
 		</a>
+		<a href="#" class="btn btn_1 a3" style="margin: 20px;">
+			popup3
+		</a>
+		<a href="#" class="btn btn_1 a4" style="margin: 20px;">
+			popup4
+		</a>
+		<a href="#" class="btn btn_1 a5" style="margin: 20px;">
+			Город
+		</a>
+	</div>
+	<div class="popup__bg" id="popup">
+		<div class="popup">
+			<svg class="icon close-popup">
+				<use xlink:href="img/svg-sprite.svg#close"></use>
+			</svg>
+			<div class="popup__wrap">
+				<h2>
+					Регистрация
+				</h2>
+				<p class="popup__sub">
+					Зарегистрируйся и получай индивидуальные скидки.
+				</p>
+				<form action="#" class="popup__form formWithValidation">
+					<div class="popup__flex q">
+						<div class="popup__item">
+							<label>
+								Введите ваше имя <span>*</span>
+							</label>
+							<input type="text" placeholder="Иван" class="form-control from field">
+						</div>
+						<div class="popup__item">
+							<label>
+								Введите вашу фамилию <span>*</span>
+							</label>
+							<input type="text" placeholder="Иванов" class="form-control from field">
+						</div>
+						<div class="popup__item">
+							<label>
+								Введите ваш телефон<span>*</span>
+							</label>
+							<input type="tel" placeholder="+7 (___) ___-__-__" class="form-control  from field tel">
+						</div>
+						<div class="popup__item">
+							<label>
+								Введите ваш e-mail <span>*</span>
+							</label>
+							<input type="email" placeholder="example@gmail.com" class="form-control  from field">
+						</div>
+						<div class="popup__item">
+							<label>
+								Введите ваш пароль <span>*</span>
+							</label>
+							<input type="password" placeholder="*********************" class="form-control  from field ">
+						</div>
+						<div class="popup__item">
+							<label>
+								Повторите ваш пароль <span>*</span>
+							</label>
+							<input type="password" placeholder="*********************" class="form-control  from field">
+						</div>
+					</div>
+					<button class="btn btn_2 btn-submit validateBtn">
+						Зарегистрироваться
+					</button>
+
+					<p class="popup__acc">
+						Уже есть аккаунт? <a href="#">Войти</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg7" id="popup7">
+		<div class="popup7">
+			<svg class="icon close-popup7">
+				<use xlink:href="img/svg-sprite.svg#close"></use>
+			</svg>
+			<div class="popup__wrap">
+				<h2>
+					Войти
+				</h2>
+				<p class="popup__sub">
+					Войти в личный кабинет.
+				</p>
+				<form action="#" class="popup__form formWithValidation2" id="form7">
+					<div class="popup__item">
+						<label>
+							Введите ваш телефон<span>*</span>
+						</label>
+						<input type="tel" placeholder="+7 (___) ___-__-__" class="form-control from field tel">
+					</div>
+					<div class="popup__item">
+						<label>
+							Введите ваш пароль <span>*</span>
+						</label>
+						<input type="password" placeholder="*********************" class="form-control from field">
+					</div>
+					<button class="btn btn_2 validateBtn2">
+						Войти
+					</button>
+					<p class="popup__acc">
+						Нет аккаунта? <a href="#">Зарегистрироваться</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg6" id="popup6">
+		<div class="popup6">
+			<svg class="icon close-popup6">
+				<use xlink:href="img/svg-sprite.svg#close"></use>
+			</svg>
+			<div class="popup__wrap">
+				<h2>
+					Выберите город
+				</h2>
+				<p class="popup__sub">
+					Выберите город, чтобы мы нашли для вас лучшее предложение.
+				</p>
+				<div class="box box6" id="some4"></div>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg2 order" id="popup2">
+		<div class="popup2 popup_order">
+			<div class="close-popup2 close">
+				<svg class="icon">
+					<use xlink:href="img/svg-sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="order__wrap q">
+				<div class="order__left">
+					<img src="img/area.png" alt="">
+				</div>
+				<div class="order__right q">
+					<h2>
+						Выбранные билеты
+					</h2>
+					<div class="order__tickets">
+						<div class="order__item">
+							<div class="order__info">
+								<p>
+									Сектор 211
+								</p>
+								<p>
+									8 ряд, 25 место
+								</p>
+							</div>
+							<div class="order__sum">
+								<p>
+									5 000 ₽
+								</p>
+								<p>
+									2 500 ₽
+								</p>
+							</div>
+						</div>
+						<div class="order__item">
+							<div class="order__info">
+								<p>
+									Сектор 211
+								</p>
+								<p>
+									8 ряд, 25 место
+								</p>
+							</div>
+							<div class="order__sum">
+								<p>
+									5 000 ₽
+								</p>
+								<p>
+									2 500 ₽
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="order__bottom">
+						<div class="order__flex q">
+							<p class="order__num">
+								x2 билета
+							</p>
+							<p class="order__pay">
+								5 000 ₽
+							</p>
+						</div>
+						<a href="#" class="order__btn btn">
+							Оформить заказ
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg3 order" id="popup3">
+		<div class="popup3 popup_order">
+			<div class="close-popup3 close">
+				<svg class="icon">
+					<use xlink:href="img/svg-sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="order__wrap q">
+				<div class="order__left">
+					<h2>
+						Способ оплаты
+					</h2>
+					<div class="order__checkboxes q">
+						<div>
+							<input class="form-check-input custom-checkbox" type="radio" name="form" id="form1"
+								value="Банковской картой">
+							<label class="form-check-label " for="form1">
+								Банковской картой
+							</label>
+						</div>
+						<div>
+							<input class="form-check-input custom-checkbox" type="radio" name="form" id="form2"
+								value="Яндекс.Деньги">
+							<label class="form-check-label " for="form2">
+								Яндекс.Деньги
+							</label>
+						</div>
+					</div>
+					<h2>
+						Контактные данные
+					</h2>
+					<form action="#" class="order__form q">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Фамилия">
+						<input type="tel" placeholder="Номер телефона" class="tel">
+						<input type="email" placeholder="E-mail">
+						<textarea name="text" placeholder="Комментарий к заказу"></textarea>
+					</form>
+					<p class="order__enter">
+						Уже есть аккаунт? <a href="#">Войти</a>
+					</p>
+				</div>
+				<div class="order__right q">
+					<h2>
+						Выбранные билеты
+					</h2>
+					<div class="order__tickets">
+						<div class="order__item">
+							<div class="order__info">
+								<p>
+									Сектор 211
+								</p>
+								<p>
+									8 ряд, 25 место
+								</p>
+							</div>
+							<div class="order__sum">
+								<p>
+									5 000 ₽
+								</p>
+								<p>
+									2 500 ₽
+								</p>
+							</div>
+						</div>
+						<div class="order__item">
+							<div class="order__info">
+								<p>
+									Сектор 211
+								</p>
+								<p>
+									8 ряд, 25 место
+								</p>
+							</div>
+							<div class="order__sum">
+								<p>
+									5 000 ₽
+								</p>
+								<p>
+									2 500 ₽
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="order__bottom">
+						<div class="order__flex q">
+							<p class="order__num">
+								x2 билета
+							</p>
+							<p class="order__pay">
+								5 000 ₽
+							</p>
+						</div>
+						<a href="#" class="order__btn btn">
+							Оформить заказ
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg4 order" id="popup4">
+		<div class="popup4 popup_order">
+			<div class="close-popup4 close">
+				<svg class="icon">
+					<use xlink:href="img/svg-sprite.svg#close"></use>
+				</svg>
+			</div>
+			<div class="order__wrap q">
+				<div class="order__left">
+					<h2>
+						Способ оплаты
+					</h2>
+					<div class="order__checkboxes q">
+						<div>
+							<input class="form-check-input custom-checkbox" type="radio" name="form" id="form11"
+								value="Банковской картой">
+							<label class="form-check-label " for="form11">
+								Банковской картой
+							</label>
+						</div>
+						<div>
+							<input class="form-check-input custom-checkbox" type="radio" name="form" id="form22"
+								value="Яндекс.Деньги">
+							<label class="form-check-label " for="form22">
+								Яндекс.Деньги
+							</label>
+						</div>
+					</div>
+					<h2>
+						Контактные данные
+					</h2>
+					<form action="#" class="order__form q">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Фамилия">
+						<input type="tel" placeholder="Номер телефона" class="tel">
+						<input type="email" placeholder="E-mail">
+						<textarea name="text" placeholder="Комментарий к заказу"></textarea>
+					</form>
+					<p class="order__enter">
+						Уже есть аккаунт? <a href="#">Войти</a>
+					</p>
+				</div>
+				<div class="order__right q">
+					<h2>
+						Выбранные билеты
+					</h2>
+					<div class="order__tickets">
+						<div class="order__item">
+							<div class="order__info">
+								<p>
+									Сектор 211
+								</p>
+								<p>
+									8 ряд, 25 место
+								</p>
+							</div>
+							<div class="order__sum">
+								<p>
+									5 000 ₽
+								</p>
+								<p>
+									2 500 ₽
+								</p>
+							</div>
+						</div>
+						<div class="order__item">
+							<div class="order__info">
+								<p>
+									Сектор 211
+								</p>
+								<p>
+									8 ряд, 25 место
+								</p>
+							</div>
+							<div class="order__sum">
+								<p>
+									5 000 ₽
+								</p>
+								<p>
+									2 500 ₽
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="order__bottom">
+						<div class="order__flex q">
+							<p class="order__num">
+								x2 билета
+							</p>
+							<p class="order__pay">
+								5 000 ₽
+							</p>
+						</div>
+						<a href="#" class="order__btn btn">
+							Открыть чат
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup__bg5 order" id="popup5">
+		<div class="popup5 popup_thanks">
+			<div class="close-popup5 close">
+				<svg class="icon">
+					<use xlink:href="img/svg-sprite.svg#close"></use>
+				</svg>
+			</div>
+			<h2>
+				Спасибо за покупку!
+			</h2>
+			<p class="popup_thanks__text">
+				Ваш заказ <span>#2566312</span> отправлен в обработку, для получения билетов свяжитесь с нами в чате
+			</p>
+			<div class="popup_thanks__tickets">
+				<div class="popup_thanks__item">
+					<div class="popup_thanks__left">
+						<img src="img/img.png" alt="">
+					</div>
+					<div class="popup_thanks__right">
+						<h3>
+							Панк-сказка «Король и Шут»
+						</h3>
+						<div class="popup_thanks__info">
+							<p>
+								x2 билета
+							</p>
+							<p>
+								5 000 ₽
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="popup_thanks__btn btn">
+				Открыть чат
+			</a>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="js/all.js"></script>
